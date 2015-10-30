@@ -1,0 +1,103 @@
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Bootstrap Theme Simply Me</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <style>
+  .bg-1 { 
+      background-color: #1abc9c;
+      color: #ffffff;
+  }
+  .bg-2 { 
+      background-color: #474e5d;
+      color: #ffffff;
+  }
+  .bg-3 { 
+      background-color: #ffffff;
+      color: #555555;
+  }
+  .bg-4 { 
+      background-color: #2f2f2f;
+      color: #fff;
+  }
+  .container-fluid {
+      padding-top: 70px;
+      padding-bottom: 70px;
+  }
+  .navbar {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      font-size: 12px;
+      letter-spacing: 5px;
+  }
+  .navbar-nav  li a:hover {
+      color: #1abc9c !important;
+  }
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Leave Management System</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Login</a></li>
+        <li><a href="#">About us</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid bg-1 text-center">
+  <h3>Universum Global</h3>
+  <img src="logo.jpeg" class="img-responsive img-circle" style="display:inline" alt="Universum Global" width="350" height="350">
+  <h3>We’re Universum: The Global Leader in Employer Branding.</h3>
+</div>
+
+<div class="container-fluid bg-2 text-center">
+  <h3>Universum Software india pvt ltd</h3>
+  <h3>
+We have a growing number of products to add to our portfolio. All these require a great effort from an engineering point of view. With that in mind, we are setting up a new development cell based in Chennai, India. This team will work closely with our Centers of Excellence based in Stockholm and around the world in developing our products and also improving our existing services.</h3>
+</div>
+<div class="container-fluid bg-3 text-center">    
+  <h3>Leave Management System</h3><br>
+  <div class="row">
+    <div class="col-sm-4">
+       <%= link_to "Sign up now!", new_user_registration_path, class: "btn btn-lg btn-primary", id: "sign" %>
+      <img src="logo.jpeg" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-4"> 
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <img src="logo.jpeg" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-4"> 
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <img src="logo.jpeg" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid bg-4 text-center">
+  <p>Bootstrap Theme Made By <a href="http://www.w3schools.com">www.w3schools.com</a></p> 
+</footer>
+<div class="container">
+<div class="center jumbotron">
+  <h1>Welcome to the Leave App</h1>
+  <%= link_to "Sign up now!", new_user_registration_path, class: "btn btn-lg btn-primary", id: "sign" %>
+</div>
+</div>
+</body>
